@@ -204,6 +204,31 @@ p{margin:0}
 .book b{font-family:var(--display);display:block}
 .book span{font-size:.92rem;color:#d9e4f5}
 
+/* benefits table */
+.bene{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--rule);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.bene td{padding:.95rem 1.1rem;border-top:1px solid var(--rule)}
+.bene tr:first-child td{border-top:0}
+.bene td:first-child{font-weight:700}
+.bene td:last-child{width:3.5rem;text-align:center}
+.bene .check{margin:0 auto}
+.bene tr{transition:background .2s}
+.bene tr:hover{background:var(--accent-soft)}
+
+/* three tracks */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}}
+.pillar{background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);padding:1.3rem;display:grid;gap:.7rem;box-shadow:var(--shadow)}
+.pillar .chip{justify-self:start;font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .8rem;border-radius:8px;color:#1b2a4a}
+.pillar ul{margin:0;padding-left:1.1rem;color:var(--muted);font-size:.95rem;display:grid;gap:.25rem}
+.pages{display:flex;gap:.4rem}
+.pages i{flex:1;aspect-ratio:3/4;border-radius:6px;background:var(--paper-2);border:1px solid var(--rule);position:relative;overflow:hidden;transition:transform .3s var(--ease)}
+.pillar:hover .pages i:nth-child(1){transform:rotate(-3deg) translateY(-3px)}
+.pillar:hover .pages i:nth-child(3){transform:rotate(3deg) translateY(-3px)}
+.pages i::before{content:"";position:absolute;inset:18% 15% auto 15%;height:10%;border-radius:4px;background:var(--rule)}
+.pages i::after{content:"";position:absolute;inset:40% 15% 15% 15%;border-radius:4px;background:repeating-linear-gradient(to bottom,var(--rule) 0 2px,transparent 2px 9px)}
+.lean{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.lean:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(27,42,74,.14)}
+
 /* sample page */
 .sample{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
 @media (max-width:860px){.sample{grid-template-columns:1fr}}
