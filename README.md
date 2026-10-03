@@ -3,14 +3,39 @@
 A single-file landing page for the Kids Life Skills Bundle, modeled on the structure of a high-converting printable-bundle product page (announcement timer, hero with book mockup, 50%-off launch offer, what's included, benefits table, three skill tracks, sample page, founder story, FAQ, sticky mobile CTA).
 
 ```
-index.html                  the whole site — HTML, CSS and JS in one file
+index.html                  home / sales page (StoryBrand order)
+assets/styles.css           design tokens + all styles (cache-busted with ?v=N)
+assets/main.js              countdown, nav, scroll reveals, count-ups, pinned plan, opt-in form
+404.html, thank-you.html    utility pages
+netlify.toml, _redirects    Netlify config (publish ".", no build)
 content/curriculum-outline.md   the 10 workbooks the page promises, page by page
 content/brand-and-copy.md       naming, voice, what to change before launch
-assets/                     drop your real cover images and photo here
 ```
 
+## Page structure (StoryBrand)
+1. Hero — the parent (character) and what they want
+2. Problem — three numbered pains (external, internal, "you're behind")
+3. Guide — the dad story (empathy) + three authority cards
+4. Plan — pinned three-step scroll section with a CTA
+5. What you get — count-up stats + the ten books (blue section)
+6. Sample page
+7. Success vs stakes — with / without columns
+8. Offer — price, buy box, free-sample fallback
+9. FAQ — native `<details>`, including an honest "where are the reviews?"
+10. Final CTA (blue) with the free fallback
+
+## Motion (no libraries)
+- `.reveal` + `.reveal-d1..d4` fade-up on scroll via IntersectionObserver
+- `.h-in` hero entrance sequence
+- `[data-count]` count-up numbers
+- `.step[data-step]` / `.frame[data-frame]` pinned plan
+- Sticky mobile buy bar shows after the hero, hides at the offer
+- All of it respects `prefers-reduced-motion`
+
 ## Run it locally
-Open `index.html` in a browser. No build step.
+Serve the folder (asset paths are root-relative): `npx serve .` or `python3 -m http.server`. No build step.
+
+When you change CSS or JS, bump the `?v=N` on the `<link>`/`<script>` tags so Netlify's long cache picks it up.
 
 ## Deploy (free, 5 minutes)
 Any static host works:
@@ -22,9 +47,9 @@ Any static host works:
 Point your domain at the host once you've picked a name.
 
 ## Connect checkout
-In `index.html`, find:
+At the top of `assets/main.js`, find:
 ```js
-var CHECKOUT_URL = "";
+var CHECKOUT_URL = '';
 ```
 Set it to your product's checkout link and every Buy button points there:
 - **Stripe Payment Link** (lowest fees, 5 minutes to set up, delivers a download link on the receipt page)
@@ -33,8 +58,9 @@ Set it to your product's checkout link and every Buy button points there:
 
 ## Connect the free-sample form
 ```js
-var FORM_ENDPOINT = "";
+var FORM_ENDPOINT = '';
 ```
+(also in `assets/main.js`)
 Set it to a POST endpoint that accepts JSON `{email, source}`:
 - **Formspree**: `https://formspree.io/f/YOUR_ID` (then forward subscribers to your email tool)
 - **Kit (ConvertKit)**, **Mailchimp**, **Beehiiv**: use their form endpoint, or swap the `fetch` call for their embed snippet

@@ -1,561 +1,381 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Raise Ready Kids</title>
-<meta name="description" content="The Raise Ready Kids Life Skills Bundle: 150+ printable pages that teach kids feelings, money, chores, focus and confidence. Made by a dad. 50% off during launch week.">
+<title>Raise Ready Kids — Life skills your kid can actually use</title>
+<meta name="description" content="Ten print-at-home workbooks that teach kids feelings, money, chores, focus and friendship. 150+ pages. Made by a dad. 15 minutes a day at the kitchen table.">
+<link rel="canonical" href="https://raisereadykids.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raise Ready Kids — Life skills your kid can actually use">
+<meta property="og:description" content="Ten print-at-home workbooks that teach kids feelings, money, chores, focus and friendship. Made by a dad.">
+<meta property="og:url" content="https://raisereadykids.com/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
-<style>
-/* Layout: one centered 1100px column; hero and offer sit side by side on desktop, stack on phone.
-   Feel: a dad's kitchen-table workbook. Ink navy, school-bus yellow, construction-paper blue, paper white. */
-:root{
-  --paper:#fffdf7;
-  --paper-2:#f6f1e4;
-  --ink:#1b2a4a;
-  --ink-soft:#4b5a77;
-  --line:#e3dccb;
-  --sun:#ffc531;
-  --sun-deep:#e0a400;
-  --sky:#bfe3f5;
-  --sky-deep:#2a8fc4;
-  --grass:#5cb85c;
-  --coral:#ff7a59;
-  --card:#ffffff;
-  --shadow:0 10px 30px rgba(27,42,74,.10);
-  --display:"Baloo 2", "Trebuchet MS", system-ui, sans-serif;
-  --body:"Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#141b2b; --paper-2:#1c2538; --ink:#f2eee3; --ink-soft:#b8bfd0; --line:#2d3850;
-    --sun:#ffc531; --sun-deep:#ffd45e; --sky:#1f3b52; --sky-deep:#6cc0ee; --card:#1c2538;
-    --shadow:0 10px 30px rgba(0,0,0,.35); color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#141b2b; --paper-2:#1c2538; --ink:#f2eee3; --ink-soft:#b8bfd0; --line:#2d3850;
-  --sun:#ffc531; --sun-deep:#ffd45e; --sky:#1f3b52; --sky-deep:#6cc0ee; --card:#1c2538;
-  --shadow:0 10px 30px rgba(0,0,0,.35); color-scheme:dark;
-}
-
-*{box-sizing:border-box}
-[hidden]{display:none!important}
-html,body{margin:0}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
-img,svg{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
-h1{font-size:clamp(2.1rem,6vw,3.6rem);font-weight:800}
-h2{font-size:clamp(1.7rem,4.2vw,2.5rem);font-weight:800}
-h3{font-size:1.25rem;font-weight:700}
-p{margin:0}
-.wrap{width:min(1100px,100%);margin-inline:auto;padding-inline:20px}
-.eyebrow{font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sky-deep)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--display);font-weight:700;font-size:1.05rem;padding:.9rem 1.5rem;border-radius:999px;border:0;cursor:pointer;text-decoration:none;transition:transform .12s ease,box-shadow .12s ease}
-.btn:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--sky-deep);outline-offset:3px}
-.btn-sun{background:var(--sun);color:#1b2a4a;box-shadow:0 6px 0 var(--sun-deep)}
-.btn-sun:hover{transform:translateY(-2px)}
-.btn-sun:active{transform:translateY(3px);box-shadow:0 2px 0 var(--sun-deep)}
-.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
-
-/* announcement bar */
-.bar{background:var(--ink);color:#fffdf7;font-size:.92rem;padding-block:.55rem}
-.bar .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center;justify-content:center;text-align:center}
-.bar strong{font-family:var(--display)}
-.timer{display:inline-flex;gap:.35rem;font-variant-numeric:tabular-nums}
-.timer span{background:rgba(255,255,255,.12);padding:.1rem .5rem;border-radius:6px;font-weight:700;min-width:2.6em;text-align:center}
-.timer small{display:block;font-size:.6rem;opacity:.75;font-weight:400;letter-spacing:.08em}
-
-/* header */
-header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
-.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
-.logo svg{width:38px;height:38px}
-nav.main{display:flex;gap:1.4rem;font-size:.95rem}
-nav.main a{text-decoration:none;color:var(--ink-soft)}
-nav.main a:hover{color:var(--ink)}
-.hdr-cta{padding:.6rem 1.1rem;font-size:.95rem}
-@media (max-width:760px){nav.main{display:none}}
-
-/* hero */
-.hero{padding-block:2.5rem 2rem;background:
-  radial-gradient(900px 400px at 85% -10%, var(--sky) 0, transparent 60%),
-  var(--paper)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}}
-.badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.1rem}
-.badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.85rem;font-weight:700;box-shadow:var(--shadow)}
-.badge .dot{width:9px;height:9px;border-radius:50%;background:var(--grass)}
-.hero p.lead{font-size:1.15rem;color:var(--ink-soft);margin-top:1rem;max-width:34em}
-.hero .actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin-top:1.5rem}
-.hero .fine{font-size:.85rem;color:var(--ink-soft);margin-top:.9rem}
-
-/* book stack */
-.stack{position:relative;display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:.9rem;align-items:center}
-.mini{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:.6rem;display:grid;gap:.5rem;border:1px solid var(--line)}
-.mini .thumb{aspect-ratio:3/4;border-radius:8px;display:grid;place-items:center;font-family:var(--display);font-weight:800;text-align:center;padding:.5rem;font-size:.8rem;line-height:1.15;color:#1b2a4a}
-.mini .tag{font-size:.72rem;font-weight:700;text-align:center;color:var(--ink-soft)}
-.cover{aspect-ratio:3/4;border-radius:14px 22px 22px 14px;background:#fffdf7;box-shadow:var(--shadow),inset 14px 0 0 -8px var(--ink);position:relative;overflow:hidden;color:#1b2a4a;padding:1.4rem 1.2rem 1.2rem 1.9rem;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line)}
-.cover .spiral{position:absolute;left:4px;top:8%;bottom:8%;width:10px;display:flex;flex-direction:column;justify-content:space-between}
-.cover .spiral i{width:10px;height:10px;border-radius:50%;background:var(--paper-2);border:2px solid #8e9ab5}
-.cover h3{font-size:clamp(1.3rem,3.4vw,2rem);line-height:.95;font-weight:800}
-.cover h3 b{display:block;color:var(--coral);font-size:1.25em}
-.cover .sub{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
-.cover .art{height:36%;background:
-  radial-gradient(circle at 20% 80%, var(--grass) 0 18%, transparent 19%),
-  radial-gradient(circle at 50% 70%, var(--sun) 0 22%, transparent 23%),
-  radial-gradient(circle at 80% 85%, var(--sky-deep) 0 18%, transparent 19%),
-  linear-gradient(to top, #e8f5e3 0 30%, transparent 30%);border-radius:10px}
-.caption-strip{margin-top:1.2rem;background:var(--ink);color:#fffdf7;border-radius:12px;padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.9rem}
-.caption-strip b{font-family:var(--display);color:var(--sun)}
-
-/* offer block */
-.offer{padding-block:1rem 3rem}
-.offer .card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:1.6rem;display:grid;grid-template-columns:1.2fr 1fr;gap:1.6rem;align-items:start}
-@media (max-width:860px){.offer .card{grid-template-columns:1fr}}
-.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:.7rem;margin-top:.5rem}
-.price .now{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--coral);line-height:1}
-.price .was{text-decoration:line-through;color:var(--ink-soft);font-size:1.3rem}
-.price .save{background:var(--sun);color:#1b2a4a;font-weight:700;font-size:.8rem;padding:.3rem .7rem;border-radius:999px}
-.stars{color:var(--sun-deep);letter-spacing:.1em;font-size:1.1rem}
-.social{display:flex;align-items:center;gap:.6rem;margin-top:.6rem;color:var(--ink-soft);font-size:.92rem}
-form.capture{display:grid;gap:.7rem;background:var(--paper-2);border-radius:14px;padding:1.2rem}
-form.capture label{font-weight:700;font-size:.9rem}
-form.capture input{width:100%;font:inherit;padding:.85rem 1rem;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
-form.capture .btn{width:100%}
-form.capture .fine{font-size:.78rem;color:var(--ink-soft)}
-.buybox{display:grid;gap:.8rem;background:var(--paper-2);border-radius:14px;padding:1.3rem;border:2px solid var(--sun)}
-.buyprice{display:flex;align-items:baseline;gap:.7rem}
-.buyprice .now{font-family:var(--display);font-weight:800;font-size:2.4rem;color:var(--coral);line-height:1}
-.buyprice .was{text-decoration:line-through;color:var(--ink-soft);font-size:1.2rem}
-.buybox .btn{width:100%}
-.buybox .fine{font-size:.78rem;color:var(--ink-soft)}
-.trust{list-style:none;margin:0;padding:0;display:grid;gap:.3rem;font-size:.88rem;font-weight:700}
-.trust li::before{content:"✓ ";color:var(--grass)}
-.success{display:grid;gap:.5rem;background:var(--paper-2);border-radius:14px;padding:1.2rem;border:2px solid var(--grass)}
-.success h3{color:var(--grass)}
-
-/* sections */
-section.block{padding-block:3rem;border-top:1px solid var(--line)}
-.sec-head{display:grid;gap:.5rem;max-width:40em;margin-bottom:1.8rem}
-.sec-head .underline{height:8px;width:160px;border-radius:999px;background:var(--sun)}
-.included{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
-@media (max-width:860px){.included{grid-template-columns:1fr}}
-.checklist{list-style:none;margin:0;padding:0;display:grid;gap:.65rem}
-.checklist li{display:flex;gap:.7rem;align-items:flex-start;font-weight:700}
-.checklist li small{display:block;font-weight:400;color:var(--ink-soft)}
-.check{flex:none;width:24px;height:24px;border-radius:50%;background:var(--grass);display:grid;place-items:center;margin-top:.15rem}
-.check svg{width:14px;height:14px}
-
-.bene{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
-.bene td{padding:.9rem 1rem;border-top:1px solid var(--line)}
-.bene tr:first-child td{border-top:0}
-.bene td:last-child{width:3.5rem;text-align:center}
-.bene td:first-child{font-weight:700}
-
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-@media (max-width:860px){.pillars{grid-template-columns:1fr}}
-.pillar{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.2rem;display:grid;gap:.7rem;box-shadow:var(--shadow)}
-.pillar .chip{justify-self:start;font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .8rem;border-radius:8px;color:#1b2a4a}
-.pillar ul{margin:0;padding-left:1.1rem;color:var(--ink-soft);font-size:.95rem;display:grid;gap:.25rem}
-.pages{display:flex;gap:.4rem}
-.pages i{flex:1;aspect-ratio:3/4;border-radius:6px;background:var(--paper-2);border:1px solid var(--line);position:relative;overflow:hidden}
-.pages i::before{content:"";position:absolute;inset:18% 15% auto 15%;height:10%;border-radius:4px;background:var(--line)}
-.pages i::after{content:"";position:absolute;inset:40% 15% 15% 15%;border-radius:4px;background:repeating-linear-gradient(to bottom,var(--line) 0 2px,transparent 2px 9px)}
-
-/* sample page */
-.sample{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
-@media (max-width:860px){.sample{grid-template-columns:1fr}}
-.sheet{background:#fffdf7;color:#1b2a4a;border-radius:10px;box-shadow:var(--shadow);padding:1.4rem;border:1px solid #e3dccb;transform:rotate(-1.5deg);display:grid;gap:.9rem}
-.sheet h3{font-size:1.6rem;letter-spacing:.06em}
-.sheet .cloud{background:#dbeefb;border-radius:14px;padding:.8rem 1rem;font-size:.9rem}
-.sheet .lines{height:70px;background:repeating-linear-gradient(to bottom,transparent 0 18px,#c9d3e3 18px 19px);border-radius:4px}
-.sheet .row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
-.steps{display:grid;gap:1rem}
-.step{display:flex;gap:1rem}
-.step .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--sun);color:#1b2a4a;font-family:var(--display);font-weight:800;display:grid;place-items:center}
-
-/* dad story */
-.story{background:var(--paper-2)}
-.story .wrap{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center}
-@media (max-width:760px){.story .wrap{grid-template-columns:1fr}}
-.avatar{width:140px;height:140px;border-radius:50%;background:var(--card);border:6px solid var(--sun);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:.85rem;text-align:center;color:var(--ink-soft);padding:.6rem;box-shadow:var(--shadow)}
-.story blockquote{margin:0;font-size:1.15rem;display:grid;gap:.8rem}
-.story cite{font-style:normal;font-weight:700;color:var(--ink-soft);font-size:.95rem}
-
-/* faq */
-.faq{display:grid;gap:.6rem;max-width:46em}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.2rem 1.1rem}
-.faq summary{cursor:pointer;font-weight:700;padding-block:.8rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--display);font-size:1.4rem;color:var(--sky-deep);line-height:1}
-.faq details[open] summary::after{content:"–"}
-.faq details p{padding-bottom:1rem;color:var(--ink-soft)}
-
-/* final cta */
-.final{text-align:center;padding-block:3.5rem}
-.final .wrap{display:grid;gap:1rem;justify-items:center;max-width:44em}
-.final p{color:var(--ink-soft);font-size:1.1rem}
-
-footer.site{border-top:1px solid var(--line);padding-block:2rem 7rem;font-size:.88rem;color:var(--ink-soft)}
-footer.site .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between}
-footer.site a{text-decoration:none}
-
-/* sticky mobile bar */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);padding:.7rem 16px calc(.7rem + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -8px 24px rgba(27,42,74,.08)}
-.sticky .t{font-family:var(--display);font-weight:700;line-height:1.1;font-size:.95rem}
-.sticky .p{font-size:.85rem;color:var(--ink-soft)}
-.sticky .p b{color:var(--coral);font-size:1.05rem}
-.sticky .btn{padding:.7rem 1.2rem;font-size:.95rem;white-space:nowrap}
-@media (min-width:861px){.sticky{display:none} footer.site{padding-bottom:2rem}}
-
-@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
-</style>
+<link rel="stylesheet" href="/assets/styles.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Kids Life Skills Bundle","brand":{"@type":"Brand","name":"Raise Ready Kids"},"description":"Ten printable workbooks (150+ pages) that teach kids ages 5-12 feelings, money, chores, focus and friendship skills.","offers":{"@type":"Offer","price":"24.99","priceCurrency":"USD","availability":"https://schema.org/InStock"}}
+</script>
 </head>
 <body>
 
-<div class="bar" role="status">
-  <div class="wrap">
-    <strong>Launch sale: 50% off the full bundle until midnight</strong>
-    <div class="timer" id="timer" aria-label="Time left in launch offer">
+<div class="urgent" id="urgentBar" role="status">
+  <div class="container">
+    <strong>Launch sale: 50% off until midnight</strong>
+    <div class="timer" aria-label="Time left at the launch price">
       <span><span id="t-h">00</span><small>HRS</small></span>
       <span><span id="t-m">00</span><small>MIN</small></span>
       <span><span id="t-s">00</span><small>SEC</small></span>
     </div>
+    <button class="x" aria-label="Dismiss">×</button>
   </div>
 </div>
 
-<header class="site">
-  <div class="wrap">
-    <a class="logo" href="#top" aria-label="Raise Ready Kids home">
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="Raise Ready Kids home">
       <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#ffc531"/><path d="M14 30c3-9 17-9 20 0" fill="none" stroke="#1b2a4a" stroke-width="3.2" stroke-linecap="round"/><circle cx="18" cy="19" r="2.4" fill="#1b2a4a"/><circle cx="30" cy="19" r="2.4" fill="#1b2a4a"/><path d="M24 6v-4M30 7l2-3M18 7l-2-3" stroke="#1b2a4a" stroke-width="3" stroke-linecap="round"/></svg>
-      Raise Ready Kids
+      Raise<span>Ready</span>Kids
     </a>
-    <nav class="main" aria-label="Page sections">
-      <a href="#included">What's inside</a>
-      <a href="#benefits">Benefits</a>
-      <a href="#sample">Sample page</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav class="nav" id="nav" aria-label="Page sections">
+      <a href="#problem">Why</a>
+      <a href="#plan">How it works</a>
+      <a href="#get-list">What's inside</a>
       <a href="#faq">FAQ</a>
+      <a class="btn btn-cta buy" href="#get">Get 50% off <span class="arr">→</span></a>
     </nav>
-    <a class="btn btn-sun hdr-cta buy" href="#get">Get 50% off</a>
   </div>
 </header>
 
 <main id="top">
 
+<!-- 1 · HERO (character + what they want) -->
 <section class="hero">
-  <div class="wrap">
+  <div class="container">
     <div>
-      <div class="badges">
-        <span class="badge"><span class="dot"></span>150+ printable pages</span>
-        <span class="badge">Instant PDF download</span>
-        <span class="badge">Made by a dad, for ages 5–12</span>
+      <div class="pills h-in">
+        <span class="pill"><span class="dot"></span>150+ printable pages</span>
+        <span class="pill">Ages 5–12</span>
+        <span class="pill">Made by a dad</span>
       </div>
-      <p class="eyebrow">The Kids Life Skills Bundle</p>
-      <h1>Raise a kid who can handle real life.</h1>
-      <p class="lead">Ten print-at-home workbooks that teach the stuff school skips: naming big feelings, handling money, owning chores, staying focused and speaking up for themselves. Fifteen minutes a day at the kitchen table.</p>
-      <div class="actions">
-        <a class="btn btn-sun" href="#get">Get the bundle for $24.99</a>
-        <a class="btn btn-ghost" href="#included">See what's inside</a>
+      <p class="eyebrow h-in d1">The Kids Life Skills Bundle</p>
+      <h1 class="h-in d2">Raise a kid who can handle life.<br><span class="hl">Not just school.</span></h1>
+      <p class="lead h-in d3">Ten print-at-home workbooks. They teach the things nobody puts on a report card: naming big feelings, handling money, doing chores without a fight, staying focused, and speaking up. Fifteen minutes a day. Kitchen table. That's it.</p>
+      <div class="actions h-in d4">
+        <a class="btn btn-cta btn-lg buy" href="#get">Get the bundle for $24.99 <span class="arr">→</span></a>
+        <a class="link" href="#plan">See how it works <span class="arr">→</span></a>
       </div>
-      <p class="fine">Normally $49.99. Half price during launch week. Instant download, 30-day money-back guarantee, no questions asked.</p>
+      <p class="fine micro h-in d5">🔒 Secure checkout · Instant download · 30-day money-back guarantee</p>
     </div>
 
-    <div>
-      <div class="stack" aria-label="Preview of the workbooks in the bundle">
-        <div style="display:grid;gap:.9rem">
-          <div class="mini"><div class="thumb" style="background:#ffe9a8">Positive Affirmation Cards</div><div class="tag">120 cards</div></div>
-          <div class="mini"><div class="thumb" style="background:#d6ecfb">My Weekly Planner</div><div class="tag">Reusable</div></div>
+    <div class="h-in d3">
+      <div class="stack" aria-label="The workbooks in the bundle">
+        <div class="col">
+          <div class="mini"><div class="thumb" style="background:#ffe9a8">Affirmation Cards</div><div class="tag">120 cards</div></div>
+          <div class="mini"><div class="thumb" style="background:#d6ecfb">Weekly Planner</div><div class="tag">Reusable</div></div>
         </div>
         <div class="cover">
           <div class="spiral" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div>
-            <p class="sub">Raise Ready Kids</p>
-            <h3>Kids <b>Life Skills</b></h3>
-          </div>
+          <div><p class="sub">Raise Ready Kids</p><h3>Kids <b>Life Skills</b></h3></div>
           <div class="art" aria-hidden="true"></div>
           <p class="sub">Ten workbooks · ages 5–12</p>
         </div>
-        <div style="display:grid;gap:.9rem">
+        <div class="col">
           <div class="mini"><div class="thumb" style="background:#dff3d8">Chore Chart Kit</div><div class="tag">6 charts</div></div>
           <div class="mini"><div class="thumb" style="background:#ffd9cc">Calm-Down Toolkit</div><div class="tag">Step by step</div></div>
         </div>
       </div>
-      <div class="caption-strip">
-        <span>Giving kids the tools to handle real life, one page at a time.</span>
-        <b>RRK</b>
+      <div class="strip"><span>Real skills. Real simple. One page at a time.</span><b>RRK</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · PROBLEM -->
+<section class="sec alt" id="problem">
+  <div class="container">
+    <div class="head center">
+      <p class="eyebrow reveal">The problem</p>
+      <h2 class="reveal reveal-d1">School teaches fractions.<br>Nobody teaches feelings, money or chores.</h2>
+      <p class="lead reveal reveal-d2">So kids grow up smart on paper and lost in real life. And parents are left to figure it out at 8pm on a Tuesday.</p>
+    </div>
+    <div class="probs">
+      <div class="prob reveal reveal-d1">
+        <span class="n">01</span>
+        <h3>Meltdowns with no words</h3>
+        <p>Your kid is upset and can't tell you why. You're guessing. They're screaming. Nobody wins.</p>
+      </div>
+      <div class="prob reveal reveal-d2">
+        <span class="n">02</span>
+        <h3>"I told you three times"</h3>
+        <p>Chores, homework, shoes by the door. You nag, they stall, and the same fight repeats every single day.</p>
+      </div>
+      <div class="prob reveal reveal-d3">
+        <span class="n">03</span>
+        <h3>You feel like you're behind</h3>
+        <p>You know this stuff matters. But you don't have a plan, and fifty browser tabs of random printables is not a plan.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="offer" id="get">
-  <div class="wrap">
-    <div class="card">
-      <div>
-        <h2>Kids Life Skills Bundle <span style="color:var(--coral)">(50% off today)</span></h2>
-        <div class="social">
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <span>Launch edition. Be one of the first 1,000 families and your feedback shapes version two.</span>
+<!-- 3 · GUIDE (empathy + authority) -->
+<section class="sec" id="guide">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow reveal">Who made this</p>
+      <h2 class="reveal reveal-d1">I'm a dad. I built this for my son first.</h2>
+    </div>
+    <div class="guide reveal reveal-d2">
+      <div class="avatar">Your photo with your son goes here</div>
+      <blockquote>
+        <p>"I'm not a therapist. I'm a dad who got tired of hunting the internet for one good page about feelings, then another about money, then another about chores. So I put the whole kit in one place and tested it at our kitchen table. If a page bored my son, it got cut. What's left is the stuff that works."</p>
+        <cite>— Founder, Raise Ready Kids</cite>
+      </blockquote>
+    </div>
+    <div class="auth">
+      <div class="a reveal reveal-d1"><b>Tested on a real kid</b><span>Every page earned its spot at our table before it went in the bundle.</span></div>
+      <div class="a reveal reveal-d2"><b>Written in plain words</b><span>A 7-year-old can read the explanation on every page. No jargon.</span></div>
+      <div class="a reveal reveal-d3"><b>Built for busy parents</b><span>Every activity has a one-line tip for you: what to say, what to skip.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · PLAN (pinned 3 steps) -->
+<section class="sec alt" id="plan">
+  <div class="container">
+    <div class="head center">
+      <p class="eyebrow reveal">The plan</p>
+      <h2 class="reveal reveal-d1">Three steps. Fifteen minutes a day.</h2>
+      <p class="lead reveal reveal-d2">No prep. No special supplies. A printer and a pencil.</p>
+    </div>
+    <div class="plan">
+      <div class="pin reveal">
+        <div class="frames" aria-hidden="true">
+          <div class="frame f1 active" data-frame="0"><div class="ico">⬇️</div><span class="cap">1 · Download</span></div>
+          <div class="frame f2" data-frame="1"><div class="ico">🖨️</div><span class="cap">2 · Print one page</span></div>
+          <div class="frame f3" data-frame="2"><div class="ico">⏱️</div><span class="cap">3 · 15 minutes together</span></div>
         </div>
+      </div>
+      <div class="steps">
+        <div class="step reveal reveal-d1" data-step="0">
+          <div class="num">1</div>
+          <div><span class="k">Download</span><h3>Get the bundle in your inbox in two minutes</h3><p>All ten workbooks as one PDF, plus each one on its own. Works on any phone, tablet or computer.</p></div>
+        </div>
+        <div class="step reveal reveal-d2" data-step="1">
+          <div class="num">2</div>
+          <div><span class="k">Print one page</span><h3>Start with the skill your kid needs most</h3><p>Big feelings? Start there. Chore wars? Start there. Print one page, not the whole thing.</p></div>
+        </div>
+        <div class="step reveal reveal-d3" data-step="2">
+          <div class="num">3</div>
+          <div><span class="k">15 minutes together</span><h3>Sit down. Do the page. Done.</h3><p>Every page has one idea, one activity and one tip for you. Most kids ask to do another.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="plan-cta reveal">
+      <a class="btn btn-cta btn-lg buy" href="#get">Start tonight for $24.99 <span class="arr">→</span></a>
+      <p class="fine">50% off during launch week. Price goes back to $49.99 after.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · WHAT YOU GET -->
+<section class="sec blue" id="get-list">
+  <div class="container">
+    <div class="head center">
+      <p class="eyebrow reveal">What you get</p>
+      <h2 class="reveal reveal-d1">Everything your kid needs.<br>Nothing you don't.</h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal reveal-d1"><div class="v" data-count="10">0</div><div class="l">Workbooks</div></div>
+      <div class="stat reveal reveal-d2"><div class="v" data-count="150" data-suffix="+">0</div><div class="l">Printable pages</div></div>
+      <div class="stat reveal reveal-d3"><div class="v" data-count="120">0</div><div class="l">Affirmation cards</div></div>
+      <div class="stat reveal reveal-d4"><div class="v" data-count="15" data-suffix=" min">0</div><div class="l">A day is plenty</div></div>
+    </div>
+    <div class="books">
+      <div class="book reveal reveal-d1"><span class="ic">😤</span><div><b>Big Feelings Workbook</b><span>Name it. Size it. Pick a tool. The heart of the bundle.</span></div></div>
+      <div class="book reveal reveal-d2"><span class="ic">🧘</span><div><b>Calm-Down Toolkit</b><span>Breathing cards and a "what my brain is doing" page kids actually get.</span></div></div>
+      <div class="book reveal reveal-d1"><span class="ic">💵</span><div><b>My First Money Workbook</b><span>Earn, save, spend, give. With a pretend store and a real savings tracker.</span></div></div>
+      <div class="book reveal reveal-d2"><span class="ic">🧹</span><div><b>Chore Chart Kit</b><span>Six charts by age, plus how to hand off a chore so it sticks.</span></div></div>
+      <div class="book reveal reveal-d1"><span class="ic">📅</span><div><b>Weekly Planner & Routine Builder</b><span>Morning, after-school and bedtime routines your kid builds themselves.</span></div></div>
+      <div class="book reveal reveal-d2"><span class="ic">💛</span><div><b>120 Affirmation Cards</b><span>Cut-out cards for lunchboxes, mirrors and rough mornings.</span></div></div>
+      <div class="book reveal reveal-d1"><span class="ic">🌈</span><div><b>Gratitude & Mindfulness Journal</b><span>30 days of two-minute prompts.</span></div></div>
+      <div class="book reveal reveal-d2"><span class="ic">🎯</span><div><b>Focus & Follow-Through Pages</b><span>Timers, task-chunking and "finish line" sheets for homework.</span></div></div>
+      <div class="book reveal reveal-d1"><span class="ic">🤝</span><div><b>Friendship & Speaking-Up Workbook</b><span>Scripts for joining a game, saying no, and fixing it after a fight.</span></div></div>
+      <div class="book reveal reveal-d2"><span class="ic">🚗</span><div><b>Travel & Adventure Journal</b><span>Turns car rides and waiting rooms into something useful.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sample page -->
+<section class="sec" id="sample">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow reveal">See a page</p>
+      <h2 class="reveal reveal-d1">Every page works the same simple way.</h2>
+    </div>
+    <div class="sample">
+      <div class="sheet reveal" aria-label="Sample workbook page: Being Thankful">
+        <h3>BEING THANKFUL</h3>
+        <p class="cloud"><b>What does "thankful" mean?</b> It means stopping to notice something good you'd usually skip right past. A warm bed. A friend who saved you a seat. A dog that's happy to see you.</p>
+        <div class="row">
+          <div class="cloud" style="background:#fff2c2">Three things I'm thankful for today:<div class="lines"></div></div>
+          <div class="cloud" style="background:#dff3d8">One person I'll thank, and what I'll say:<div class="lines"></div></div>
+        </div>
+        <p style="font-size:.8rem;color:#4b5a77"><b>Grown-up tip:</b> Do yours out loud first. Kids copy what they see, not what they're told.</p>
+      </div>
+      <div class="how">
+        <div class="r reveal reveal-d1"><span class="n">1</span><div><h3>One idea, in plain words</h3><p>Short enough that your kid can read it alone.</p></div></div>
+        <div class="r reveal reveal-d2"><span class="n">2</span><div><h3>One thing to do</h3><p>Write, draw, cut out or act out. Ten to fifteen minutes.</p></div></div>
+        <div class="r reveal reveal-d3"><span class="n">3</span><div><h3>One tip for you</h3><p>What to say, and what not to say, so it sticks.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · SUCCESS vs STAKES -->
+<section class="sec alt" id="stakes">
+  <div class="container">
+    <div class="head center">
+      <p class="eyebrow reveal">Two ways this year can go</p>
+      <h2 class="reveal reveal-d1">Fewer meltdowns. Fewer fights.<br>A kid who can handle it.</h2>
+    </div>
+    <div class="vs">
+      <div class="col-box win reveal reveal-d1">
+        <h3>With the bundle</h3>
+        <ul>
+          <li>Your kid says "I'm frustrated" instead of throwing the controller.</li>
+          <li>Chores get done because they own the chart, not because you asked.</li>
+          <li>They know what a dollar is and why saving matters.</li>
+          <li>Homework starts without a standoff.</li>
+          <li>They can join a game, say no, and apologize for real.</li>
+          <li>You spend 15 minutes a day building something instead of refereeing.</li>
+        </ul>
+      </div>
+      <div class="col-box lose reveal reveal-d2">
+        <h3>Without it</h3>
+        <ul>
+          <li>Another year of guessing why they're upset.</li>
+          <li>Another year of "I told you three times."</li>
+          <li>Fifty browser tabs and still no plan.</li>
+          <li>Hoping school covers it. It won't.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · OFFER -->
+<section class="sec" id="get">
+  <div class="container">
+    <div class="offer-card reveal">
+      <div>
+        <p class="eyebrow">Launch week</p>
+        <h2>Kids Life Skills Bundle <span class="hl">(50% off today)</span></h2>
+        <p class="fine" style="margin-top:.5rem">Launch edition. Be one of the first 1,000 families. Your feedback shapes version two.</p>
         <div class="price">
           <span class="now">$24.99</span>
           <span class="was">$49.99</span>
           <span class="save">Save 50%</span>
         </div>
-        <ul class="checklist" style="margin-top:1.2rem">
-          <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>All 10 workbooks as one PDF<small>Plus each book separately, so you print only what you need this week.</small></div></li>
-          <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Parent guide for every activity<small>What to say, what to skip, and what to do when your kid pushes back.</small></div></li>
-          <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Lifetime updates<small>Every new page we add lands in your inbox at no cost.</small></div></li>
+        <ul class="checklist">
+          <li><span class="check">✓</span><div>All 10 workbooks as one PDF<small>Plus each book on its own, so you print only what you need this week.</small></div></li>
+          <li><span class="check">✓</span><div>A grown-up tip on every page<small>What to say, what to skip, what to do when your kid pushes back.</small></div></li>
+          <li><span class="check">✓</span><div>Lifetime updates<small>Every new page we add lands in your inbox at no cost.</small></div></li>
+          <li><span class="check">✓</span><div>30-day money-back guarantee<small>Email us. Full refund. Keep the files.</small></div></li>
         </ul>
       </div>
-
-      <div style="display:grid;gap:1rem">
+      <div>
         <div class="buybox">
           <div class="buyprice"><span class="now">$24.99</span><span class="was">$49.99</span></div>
-          <a class="btn btn-sun buy" id="buy-btn" href="#get">Buy now · instant download</a>
-          <p class="fine">Secure checkout. Pay with card, Apple Pay or Google Pay. PDF download link on the receipt page and by email.</p>
+          <a class="btn btn-cta btn-block buy" href="#get">Buy now · instant download <span class="arr">→</span></a>
+          <p class="fine">Card, Apple Pay or Google Pay. Download link on the receipt page and by email.</p>
           <ul class="trust">
             <li>30-day money-back guarantee</li>
             <li>Lifetime access and updates</li>
             <li>Launch price ends at midnight</li>
           </ul>
         </div>
-        <form class="capture" id="capture" novalidate>
-          <label for="parent-email"><b>Not sure yet?</b> Get 5 sample pages free.</label>
-          <input id="parent-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
-          <button class="btn btn-ghost" type="submit" id="submit-btn">Send me the free sample</button>
-          <p class="fine" id="form-error" hidden style="color:var(--coral);font-weight:700"></p>
+        <form class="optin" data-optin data-tags="rrk_sample_pages" novalidate>
+          <label for="parent-email"><b>Not ready yet?</b> Get 5 sample pages free.</label>
+          <input id="parent-email" name="email" type="email" autocomplete="email" placeholder="Your best email" required>
+          <button class="btn btn-ghost btn-block" type="submit">Send me the free sample <span class="arr">→</span></button>
+          <p class="fine">Free PDF. No spam. Unsubscribe anytime.</p>
+          <p class="fine err" id="form-error" hidden></p>
         </form>
         <div class="success" id="success" hidden>
           <h3>Check your inbox</h3>
-          <p>Your sample pages are on their way. If they aren't there in two minutes, check the promotions or spam folder.</p>
+          <p>Your sample pages are on the way. Not there in two minutes? Check promotions or spam.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block" id="included">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">What's inside</p>
-      <h2>Ten workbooks. One capable kid.</h2>
-      <div class="underline"></div>
+<!-- FAQ -->
+<section class="sec alt" id="faq">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow reveal">Quick questions</p>
+      <h2 class="reveal reveal-d1">"Okay, but will it work for my kid?"</h2>
     </div>
-    <div class="included">
-      <ul class="checklist">
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Big Feelings Workbook<small>Name it, size it, pick a tool. The emotional-intelligence core of the bundle.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Calm-Down Toolkit<small>Breathing, body scans and a "what my brain is doing" explainer kids actually get.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>My First Money Workbook<small>Earn, save, spend, give. Includes a pretend-store game and a real savings tracker.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Chore Chart Kit<small>Six chart styles by age, plus a "how to hand off a chore" guide for parents.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Weekly Planner & Routine Builder<small>Morning, after-school and bedtime routines kids build themselves.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>120 Positive Affirmation Cards<small>Cut-out cards for lunchboxes, mirrors and tough mornings.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Gratitude & Mindfulness Journal<small>30 days of two-minute prompts.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Focus & Follow-Through Pages<small>Timers, task-chunking and "finish line" sheets for homework and projects.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Friendship & Speaking-Up Workbook<small>Scripts for joining a game, saying no, and fixing it after a fight.</small></div></li>
-        <li><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span><div>Travel & Adventure Journal<small>Keeps car rides and waiting rooms useful. Maps, scavenger hunts, "what I noticed" pages.</small></div></li>
-      </ul>
-      <div>
-        <div class="cover" style="transform:rotate(3deg);max-width:320px;margin-inline:auto">
-          <div class="spiral" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div>
-            <p class="sub">Raise Ready Kids</p>
-            <h3>Kids <b>Life Skills</b></h3>
-          </div>
-          <div class="art" aria-hidden="true"></div>
-          <p class="sub">Raising capable kids starts here</p>
-        </div>
-      </div>
+    <div class="faq reveal reveal-d2">
+      <details><summary>What ages is it for?</summary><div class="ans">5 to 12. Younger kids do the drawing and cut-out pages with you reading. Older kids run the money and planner pages on their own.</div></details>
+      <details><summary>Is it a real book?</summary><div class="ans">No. It's a PDF. Print it at home or at any print shop. One page at a time, or the whole thing in a binder.</div></details>
+      <details><summary>Why is it half price?</summary><div class="ans">It's launch week. I'd rather have a thousand families using it and telling me what to improve than a hundred paying full price for version one. After launch week it goes back to $49.99.</div></details>
+      <details><summary>What if it doesn't work for us?</summary><div class="ans">Email within 30 days. Full refund. No forms, no questions. Keep the files.</div></details>
+      <details><summary>Can I use it in a classroom?</summary><div class="ans">Yes, with your own students. Please don't resell or share the files.</div></details>
+      <details><summary>Where are the reviews?</summary><div class="ans">There aren't any yet. This just launched. I'm not going to make them up. Buy it, use it, and if it helps, I'll ask you for one.</div></details>
     </div>
   </div>
 </section>
 
-<section class="block" id="benefits">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Why it works</p>
-      <h2>What your kid walks away with</h2>
-      <div class="underline"></div>
-    </div>
-    <table class="bene">
-      <tbody>
-        <tr><td>Can name what they're feeling instead of melting down</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Understands where money comes from and where it goes</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Owns a few chores without being asked three times</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Starts homework and finishes it</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Knows how to join in, say no and apologize</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Believes they can get better at hard things</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Has a calm-down plan they picked themselves</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-        <tr><td>Spends more time with you and less time negotiating</td><td><span class="check"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7"/></svg></span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="block" id="pillars">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Three skill tracks</p>
-      <h2>Every page belongs to one of three tracks</h2>
-      <div class="underline"></div>
-    </div>
-    <div class="pillars">
-      <article class="pillar">
-        <span class="chip" style="background:#ffd9cc">Feelings & Calm</span>
-        <h3>Emotional skills</h3>
-        <div class="pages" aria-hidden="true"><i></i><i></i><i></i></div>
-        <ul>
-          <li>Big Feelings Workbook</li>
-          <li>Calm-Down Toolkit</li>
-          <li>Gratitude & Mindfulness Journal</li>
-          <li>Affirmation Cards</li>
-        </ul>
-      </article>
-      <article class="pillar">
-        <span class="chip" style="background:#ffe9a8">Money & Responsibility</span>
-        <h3>Independence skills</h3>
-        <div class="pages" aria-hidden="true"><i></i><i></i><i></i></div>
-        <ul>
-          <li>My First Money Workbook</li>
-          <li>Chore Chart Kit</li>
-          <li>Weekly Planner & Routine Builder</li>
-        </ul>
-      </article>
-      <article class="pillar">
-        <span class="chip" style="background:#d6ecfb">Focus & Friends</span>
-        <h3>School & social skills</h3>
-        <div class="pages" aria-hidden="true"><i></i><i></i><i></i></div>
-        <ul>
-          <li>Focus & Follow-Through Pages</li>
-          <li>Friendship & Speaking-Up Workbook</li>
-          <li>Travel & Adventure Journal</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="sample">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Sample page</p>
-      <h2>Here's what a page looks like</h2>
-      <div class="underline"></div>
-    </div>
-    <div class="sample">
-      <div class="sheet" aria-label="Sample workbook page: Being Thankful">
-        <h3>BEING THANKFUL</h3>
-        <p class="cloud"><b>What does "thankful" mean?</b> It means stopping to notice something good that you might usually skip right past, like a warm bed, a friend who saved you a seat, or a dog that's happy to see you.</p>
-        <div class="row">
-          <div class="cloud" style="background:#fff2c2">Three things I'm thankful for today:<div class="lines"></div></div>
-          <div class="cloud" style="background:#dff3d8">One person I'll say thank you to, and what I'll say:<div class="lines"></div></div>
-        </div>
-        <p style="font-size:.8rem;color:#4b5a77"><b>Grown-up tip:</b> Do yours out loud first. Kids copy what they see, not what they're told.</p>
-      </div>
-      <div class="steps">
-        <div class="step"><span class="n">1</span><div><h3>One idea, explained like a human</h3><p style="color:var(--ink-soft)">Every page opens with a plain-language explanation your kid can read alone.</p></div></div>
-        <div class="step"><span class="n">2</span><div><h3>Something to do, not just read</h3><p style="color:var(--ink-soft)">Write, draw, cut out, act out. Ten to fifteen minutes.</p></div></div>
-        <div class="step"><span class="n">3</span><div><h3>A tip for the grown-up</h3><p style="color:var(--ink-soft)">What to say, and what not to say, so it sticks.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="block story">
-  <div class="wrap">
-    <div class="avatar">Your photo with your son goes here</div>
-    <blockquote>
-      <p>"I'm not a therapist. I'm a dad who got tired of hunting through fifty tabs for one good printable about feelings for my son. So I put the whole kit together in one place: feelings, money, chores, focus, friends. It's what I wish someone had handed me on day one."</p>
-      <cite>— Founder, Raise Ready Kids</cite>
-    </blockquote>
-  </div>
-</section>
-
-<section class="block" id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Questions</p>
-      <h2>Quick answers</h2>
-      <div class="underline"></div>
-    </div>
-    <div class="faq">
-      <details><summary>Why is it half price?</summary><p>It's launch week. We'd rather have a thousand families using it and telling us what to improve than a hundred paying full price for version one. After launch week it goes back to $49.99.</p></details>
-      <details><summary>What if it doesn't work for my kid?</summary><p>Email us within 30 days and you get a full refund. No forms, no questions. Keep the files.</p></details>
-      <details><summary>What ages is it for?</summary><p>Written for 5 to 12. Younger kids do the drawing and cut-out pages with you reading; older kids run the money and planner pages on their own.</p></details>
-      <details><summary>Is it a physical book?</summary><p>No. It's a PDF you download and print at home or at any print shop. Print one page at a time or the whole thing and put it in a binder.</p></details>
-      <details><summary>How do I get it after I sign up?</summary><p>You'll get an email with the download link within a couple of minutes. The link doesn't expire.</p></details>
-      <details><summary>Can I use it in a classroom or practice?</summary><p>Yes, for your own students or clients. Please don't resell or redistribute the files.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="final">
-  <div class="wrap">
-    <p class="eyebrow">Ready?</p>
-    <h2>Teach real-life skills the fun way.</h2>
-    <p>Grab the whole bundle at half price before midnight, print the first page tonight, and see what your kid does with it.</p>
-    <a class="btn btn-sun buy" href="#get">Get the bundle for $24.99</a>
+<!-- 8 · FINAL CTA + free fallback -->
+<section class="sec blue final">
+  <div class="container">
+    <p class="eyebrow reveal">Ready?</p>
+    <h2 class="reveal reveal-d1">Print one page tonight.<br><span class="hl">Watch what your kid does with it.</span></h2>
+    <p class="lead reveal reveal-d2">The whole bundle, half price, before midnight.</p>
+    <a class="btn btn-cta btn-lg buy reveal reveal-d3" href="#get">Get the bundle for $24.99 <span class="arr">→</span></a>
+    <p class="fine fallback reveal reveal-d4">Not ready to buy? <a href="#get">Get 5 sample pages free →</a></p>
   </div>
 </section>
 
 </main>
 
-<footer class="site">
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Raise Ready Kids. All rights reserved.</span>
-    <span><a href="#top">Privacy</a> · <a href="#top">Terms</a> · <a href="#top">Contact</a></span>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="#top">Raise<span>Ready</span>Kids</a>
+        <p style="margin-top:.6rem;max-width:30em">Print-at-home workbooks that teach kids the life skills school skips. Made by a dad. Tested at the kitchen table.</p>
+      </div>
+      <div>
+        <h4>Bundle</h4>
+        <ul><li><a href="#get-list">What's inside</a></li><li><a href="#plan">How it works</a></li><li><a href="#sample">Sample page</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#guide">About</a></li><li><a href="#top">Contact</a></li><li><a href="#top">Privacy</a></li><li><a href="#top">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Raise Ready Kids. All rights reserved.</span>
+      <span>Not therapy. Not medical advice. Just a dad and a printer.</span>
+    </div>
   </div>
 </footer>
 
-<div class="sticky" aria-hidden="false">
+<div class="sticky">
   <div>
     <div class="t">Kids Life Skills Bundle</div>
     <div class="p"><b>$24.99</b> <s>$49.99</s> · 50% off today</div>
   </div>
-  <a class="btn btn-sun buy" href="#get">Buy now</a>
+  <a class="btn btn-cta buy" href="#get">Buy now <span class="arr">→</span></a>
 </div>
 
-<script>
-// Countdown to local midnight. Resets daily so the offer always "ends tonight".
-(function(){
-  var h=document.getElementById('t-h'),m=document.getElementById('t-m'),s=document.getElementById('t-s');
-  function pad(n){return String(n).padStart(2,'0')}
-  function tick(){
-    var now=new Date(), end=new Date(now); end.setHours(24,0,0,0);
-    var d=Math.max(0,end-now);
-    h.textContent=pad(Math.floor(d/3600000)); m.textContent=pad(Math.floor(d/60000)%60); s.textContent=pad(Math.floor(d/1000)%60);
-  }
-  tick(); setInterval(tick,1000);
-  document.getElementById('year').textContent=new Date().getFullYear();
-})();
-
-// Checkout. Set CHECKOUT_URL to your Stripe Payment Link, Gumroad, Payhip or Shopify product URL.
-// Every button with class "buy" points there. Left empty, buttons scroll to the offer box.
-var CHECKOUT_URL = "";
-(function(){ if(!CHECKOUT_URL) return; document.querySelectorAll('a.buy').forEach(function(a){a.href=CHECKOUT_URL;a.target='_blank';a.rel='noopener'}); })();
-
-// Free sample capture. Set FORM_ENDPOINT to your Formspree / Kit / Mailchimp POST URL.
-// Left empty while testing, the form just shows the success state.
-var FORM_ENDPOINT = "";
-(function(){
-  var form=document.getElementById('capture'),ok=document.getElementById('success'),err=document.getElementById('form-error'),btn=document.getElementById('submit-btn');
-  form.addEventListener('submit',function(e){
-    e.preventDefault(); err.hidden=true;
-    var email=form.email.value.trim();
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){err.textContent='Enter a valid email so we know where to send it.';err.hidden=false;return;}
-    btn.disabled=true; btn.textContent='Sending…';
-    var done=function(){form.hidden=true;ok.hidden=false;ok.scrollIntoView({behavior:'smooth',block:'center'})};
-    var fail=function(){btn.disabled=false;btn.textContent='Send me the free sample';err.textContent="Something went wrong on our end. Try again in a moment.";err.hidden=false};
-    if(!FORM_ENDPOINT){setTimeout(done,500);return;}
-    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify({email:email,source:'sample-pages'})})
-      .then(function(r){r.ok?done():fail()}).catch(fail);
-  });
-})();
-</script>
+<script src="/assets/main.js?v=1"></script>
 </body>
 </html>
