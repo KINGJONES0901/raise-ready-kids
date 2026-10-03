@@ -1,6 +1,6 @@
 # Raise Ready Kids — landing page
 
-A single-file landing page for the Kids Life Skills Bundle, modeled on the structure of a high-converting printable-bundle product page (announcement timer, hero with book mockup, free-today offer, what's included, benefits table, three skill tracks, sample page, founder story, FAQ, sticky mobile CTA).
+A single-file landing page for the Kids Life Skills Bundle, modeled on the structure of a high-converting printable-bundle product page (announcement timer, hero with book mockup, 50%-off launch offer, what's included, benefits table, three skill tracks, sample page, founder story, FAQ, sticky mobile CTA).
 
 ```
 index.html                  the whole site — HTML, CSS and JS in one file
@@ -21,12 +21,21 @@ Any static host works:
 
 Point your domain at the host once you've picked a name.
 
-## Connect the email form
+## Connect checkout
 In `index.html`, find:
+```js
+var CHECKOUT_URL = "";
+```
+Set it to your product's checkout link and every Buy button points there:
+- **Stripe Payment Link** (lowest fees, 5 minutes to set up, delivers a download link on the receipt page)
+- **Gumroad** or **Payhip** (handle file delivery and VAT for you)
+- **Shopify** product URL with Digital Downloads app
+
+## Connect the free-sample form
 ```js
 var FORM_ENDPOINT = "";
 ```
-Set it to a POST endpoint that accepts JSON `{name, email, source}`:
+Set it to a POST endpoint that accepts JSON `{email, source}`:
 - **Formspree**: `https://formspree.io/f/YOUR_ID` (then forward subscribers to your email tool)
 - **Kit (ConvertKit)**, **Mailchimp**, **Beehiiv**: use their form endpoint, or swap the `fetch` call for their embed snippet
 
@@ -37,7 +46,8 @@ While it's empty, the form shows the success state without sending anything, so 
 2. **Book covers**: the covers are drawn in CSS so the page works with no images. Once you design real covers (Canva works), replace the `.cover` and `.mini .thumb` blocks with `<img>` tags.
 3. **Privacy / Terms / Contact** links in the footer point to `#top`. Add real pages.
 4. **Social proof**: the page deliberately has no review count. Add real numbers only once you have them.
-5. **Delivery**: the form promises an email with a download link. Set up the automation in your email tool before you turn on traffic.
+5. **Delivery**: the buy box promises an instant download. Make sure your checkout tool actually delivers the PDF (Stripe Payment Links can show a link on the receipt page; Gumroad/Payhip do it automatically).
+6. **Guarantee**: the page promises a 30-day no-questions refund. Honor it; it costs little on a PDF and lifts conversion.
 
 ## Design tokens
 Colors and fonts live in the `:root` block at the top of the `<style>`. Change the brand there and the whole page follows. The page supports light and dark mode automatically.
