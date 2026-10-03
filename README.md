@@ -67,10 +67,13 @@ Set it to a POST endpoint that accepts JSON `{email, source}`:
 
 While it's empty, the form shows the success state without sending anything, so you can click through the page.
 
+## Images and video
+All photos, workbook mockups and the story video were generated with Higgsfield and are loaded from Higgsfield's CDN (`d8j0ntlcm91z4.cloudfront.net`). For long-term reliability, download them into `assets/img/` and swap the URLs.
+
 ## Before launch — swap the placeholders
-1. **Founder photo**: replace the `.avatar` div with `<img>` of you and your son.
-2. **Book covers**: the covers are drawn in CSS so the page works with no images. Once you design real covers (Canva works), replace the `.cover` and `.mini .thumb` blocks with `<img>` tags.
-3. **Privacy / Terms / Contact** links in the footer point to `#top`. Add real pages.
+1. **Founder photo**: replace the `.avatar` div with a real `<img>` of you and your son. The site's photos are AI-generated stand-ins, so don't use them as "this is me."
+2. **Workbook mockups**: the images show what the books *will* look like. Replace them with shots of the real pages once they exist.
+3. **Contact email**: legal pages use `hello@raisereadykids.com`. Change it everywhere if your address is different.
 4. **Social proof**: the page deliberately has no review count. Add real numbers only once you have them.
 5. **Delivery**: the buy box promises an instant download. Make sure your checkout tool actually delivers the PDF (Stripe Payment Links can show a link on the receipt page; Gumroad/Payhip do it automatically).
 6. **Guarantee**: the page promises a 30-day no-questions refund. Honor it; it costs little on a PDF and lifts conversion.

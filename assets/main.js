@@ -136,5 +136,46 @@
     });
   }
 
+
+  // Story video: CHANGE STORY_VIDEO_URL if you replace the clip. Captions cycle on their own.
+  var STORY_VIDEO_URL = 'https://d8j0ntlcm91z4.cloudfront.net/user_3FaAuoqKZWFjGoO7chkwjulgahN/hf_20261003_103013_e8788564-5ba0-40cf-a86a-a6abddf781a2.mp4';
+  (function () {
+    var fig = document.getElementById('story'); if (!fig) return;
+    var vid = document.getElementById('storyVid'), btn = fig.querySelector('.story-play');
+    var lines = fig.querySelectorAll('.cap-line'), i = 0, timer = null;
+    if (STORY_VIDEO_URL && vid) { var src = vid.querySelector('source'); src.src = STORY_VIDEO_URL; vid.load(); }
+    function show(n) { lines.forEach(function (l, k) { l.classList.toggle('active', k === n); }); }
+    function startCaps() { if (timer) return; timer = setInterval(function () { i = (i + 1) % lines.length; show(i); }, 3200); }
+    function stopCaps() { clearInterval(timer); timer = null; }
+    function play() { fig.classList.add('playing'); if (vid && STORY_VIDEO_URL) { var pr = vid.play(); if (pr && pr.catch) pr.catch(function () {}); } startCaps(); }
+    if (btn) btn.addEventListener('click', play);
+    if ('IntersectionObserver' in window && !reduce) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) play();
+          else { if (vid) vid.pause(); stopCaps(); fig.classList.remove('playing'); }
+        });
+      }, { threshold: 0.5 }).observe(fig);
+    }
+  })();
+
+  // Week timeline: fill the line when the week scrolls in
+  (function () {
+    var wk = document.querySelector('.week'); if (!wk) return;
+    if (reduce || !('IntersectionObserver' in window)) { wk.classList.add('in'); return; }
+    var wo = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { wk.classList.add('in'); wo.disconnect(); } }, { threshold: 0.3 });
+    wo.observe(wk);
+  })();
+
+
+  // Copy email button (contact page)
+  var ce = document.getElementById('copyEmail');
+  if (ce) ce.addEventListener('click', function () {
+    var em = ce.getAttribute('data-email');
+    function ok() { ce.textContent = 'Copied ✓'; setTimeout(function () { ce.textContent = 'Copy email address'; }, 2000); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(em).then(ok, function () { window.prompt('Copy this email:', em); });
+    else window.prompt('Copy this email:', em);
+  });
+
   var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 })();
